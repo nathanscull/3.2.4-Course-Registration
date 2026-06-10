@@ -8,6 +8,8 @@ history = Course("U.S. History I")
 phys_ed = Course("Physical Education I")
 
 # TODO: Add two more courses of your choosing
+comp_sci = Course("Computer Science")
+business = Course("Business")
 
 test_student = Student("Jill", "Sample")
 test_student.add_course(math)
@@ -22,11 +24,15 @@ test_student2.add_course(science)
 test_student2.add_course(history)
 
 # TODO Add a third test student and assign them four classes
-
+test_student3 = Student("Pill", "Sample")
+test_student3.add_course(business)
+test_student3.add_course(phys_ed)
+test_student3.add_course(science)
+test_student3.add_course(comp_sci)
 # TODO Add all the test students to a list of your own creation
-
+student_list = [test_student, test_student2, test_student3]
 # TODO print student_list
-
+print(student_list)
 # TODO iterate over each of the students in the list and print their names and course schedules.
     # Each iteration should:
         # print the student
@@ -37,3 +43,5 @@ test_student2.add_course(history)
     - verify that running this file gets you the correct output with information from that file
   Also, review syntax of pulling items from a list from other activities 
 """
+for student in student_list:
+    print(student) 
