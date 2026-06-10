@@ -45,3 +45,6 @@ print(student_list)
 """
 for student in student_list:
     print(student.get_full_name()) 
+
+for student in student_list:
+    print(student) 
