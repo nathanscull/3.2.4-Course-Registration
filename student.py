@@ -36,3 +36,5 @@ class Student:
         # TODO add code to append new_course to self.courses
         self.courses.append(new_course)
         
+    def get_full_name(self):
+        return self.first_name + ", " + self.last_name

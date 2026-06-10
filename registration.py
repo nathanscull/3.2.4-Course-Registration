@@ -44,4 +44,4 @@ print(student_list)
   Also, review syntax of pulling items from a list from other activities 
 """
 for student in student_list:
-    print(student) 
+    print(student.get_full_name()) 
